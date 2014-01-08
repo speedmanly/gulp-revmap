@@ -17,17 +17,31 @@
 
 ## Usage
 
+First, install `gulp-revmap` as a development dependency:
+
+```shell
+npm install --save-dev gulp-revmap
+```
+
+or
+
+```shell
+npm install --save-dev zedix/gulp-revmap
+```
+
+Then, add it to your `gulpfile.js`:
+
 ```js
 var revmap = require('gulp-revmap');
 
 gulp.task('scripts', function() {
     gulp.src('./js/**/*.js')
-        .pipe(revmap('revmap.js', {hashlen: 10}))
+        .pipe(revmap('assets.json', {hashlen: 10}))
         .pipe(gulp.dest('./public/dist/'))
 });
 ```
 
-Ouput:
+Ouput JSON file:
 
 ```js
 {
