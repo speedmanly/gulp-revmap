@@ -1,0 +1,34 @@
+{
+  "name": "gulp-revmap",
+  "description": "Generate JSON hashmap of assets, for cache busting",
+  "version": "0.1.0",
+  "homepage": "http://github.com/zedix/gulp-revmap",
+  "repository": "git://github.com/zedix/gulp-revmap.git",
+  "author": "zedix (http://twitter.com/zedix)",
+  "bugs": {
+    "url": "https://github.com/zedix/grunt-revmap/issues"
+  }, 
+  "main": "./index.js",
+  "keywords": [
+    "gulpplugin", "hash", "rev", "assets", "cache"
+  ],
+  "dependencies": {
+    "through": "~2.3.4",
+    "gulp-util": "~2.2.5"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/wearefractal/gulp-concat/raw/master/LICENSE"
+    }
+  ]
+}
